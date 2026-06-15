@@ -335,6 +335,12 @@ ${c.bold('Examples:')}
       process.exit(1)
     }
   }
+  // Auto-append /mcp/ if user entered bare domain
+  if (!/\/mcp(\/|$|\?)/.test(rawUrl)) {
+    const fixed = normalizeUrl(rawUrl) + '/mcp/'
+    console.log(c.yellow(`  ⚠ URL missing /mcp path — using: ${fixed}`))
+    rawUrl = fixed
+  }
   const baseUrl = getBaseUrl(rawUrl)
 
   // ── Step 2: API key ─────────────────────────────────────────────────────────
