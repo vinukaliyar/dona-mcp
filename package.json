@@ -1,0 +1,29 @@
+{
+  "name": "dona-mcp",
+  "version": "1.0.0",
+  "description": "Add Dona AI MCP to Claude Desktop, Claude Code, Gemini, Codex, VS Code, and more",
+  "type": "module",
+  "bin": {
+    "dona-mcp": "./bin/dona-mcp.js"
+  },
+  "files": [
+    "bin/"
+  ],
+  "keywords": [
+    "dona",
+    "mcp",
+    "model-context-protocol",
+    "claude",
+    "gemini",
+    "codex"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vinukaliyar/dona-mcp"
+  },
+  "homepage": "https://github.com/vinukaliyar/dona-mcp#readme"
+}
